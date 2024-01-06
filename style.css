@@ -133,7 +133,7 @@
 }
 
 .taskList__item > .input-text {
-  width: 226px
+  width: 226px;
 }
 
 .btn-delete .btn__img {
@@ -153,15 +153,12 @@
 }
 
 /* Edit Task */
-.taskList .taskList__item .input-text {
-  display:none
+.taskList .taskList__item .input-text,
+.taskList .taskList__item.editMode .label {
+  display:none;
 }
 
 .taskList .taskList__item.editMode .input-text {
   display:inline-block;
-  width:224px
-}
-
-.taskList .taskList__item.editMode .label {
-  display:none;
+  width:224px;
 }
