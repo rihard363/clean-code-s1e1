@@ -1,27 +1,27 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.hero {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.hero__img {
     width: 100%;
 }
-.aaa .more_inf {
+.hero .hero__details {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.hero { text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,14 +31,14 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.taskForm__wrapper {
     display: flex;
 }
 ul {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+li, .heading {
     list-style:none;
 }
 input,button{
@@ -57,8 +57,8 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+.heading,
+label[for='newTask'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,7 +84,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for='newTask'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -129,7 +129,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
